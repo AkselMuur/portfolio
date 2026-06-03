@@ -505,3 +505,26 @@ img {
 .section--alt {
   background: #111; /* või var(--bg-alt) */
 }
+
+.hero-avatar {
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-avatar:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 60px rgba(255, 122, 0, 0.3);
+}
+/* Desktop – peidame lingi */
+@media (min-width: 1200px) {
+  .nav-hero-link {
+    display: none !important;
+  }
+}
+
+/* Mobiil – näitame lingi */
+@media (max-width: 1199px) {
+  .nav-hero-link {
+    display: block;
+  }
+}

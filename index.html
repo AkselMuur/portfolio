@@ -17,10 +17,10 @@
   <div class="layout">
 
     <!-- HERO / SIDEBAR -->
-    <aside class="hero" aria-label="Introduction">
+    <aside class="hero" aria-label="Introduction" id="hero">
       <div class="hero-inner">
 
-        <img src="images/Aksel.jpg" alt="Portrait of Aksel Müür" class="hero-avatar" />
+        <img src="images/Aksel.jpg" alt="Portrait of Aksel Müür" class="hero-avatar" id="heroAvatar" />
 
         <p class="hero-kicker">HELLO, I'M</p>
 
@@ -72,7 +72,7 @@
       <nav class="nav">
         <button class="nav-toggle" aria-label="Open menu">☰</button>
         <div class="nav-links">
-         
+         <a href="#hero" class="nav-hero-link">About me</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#education">Education</a>
@@ -288,6 +288,13 @@
       navLinks.classList.remove('show');
     });
   });
+  document.getElementById('heroAvatar').addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
 </script>
 
 </body>
