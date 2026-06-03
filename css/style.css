@@ -528,3 +528,24 @@ img {
     display: block;
   }
 }
+
+@media (max-width: 768px) {
+  .project-inner {
+    flex-direction: column;
+  }
+
+  .project-image-wrap {
+    order: 1;
+  }
+
+  .project-content {
+    order: 2;
+  }
+
+  .project-link {
+    order: 3;
+    margin-top: 1.5rem;
+    align-self: flex-start; /* või center, kui soovid keskele */
+  }
+}
+
